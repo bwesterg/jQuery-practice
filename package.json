@@ -1,0 +1,33 @@
+{
+    "watch": {
+        "test": "{src,test}/*.js",
+        "run_android": {
+            "patterns": [
+                "app"
+            ],
+            "extensions": "ts,html,scss",
+            "quiet": false
+        },
+        "run_ios": {
+            "patterns": [
+                "app"
+            ],
+            "extensions": "ts,html,scss",
+            "quiet": false
+        }
+    },
+    "scripts": {
+        "watch_android": "npm-watch run_android",
+        "watch_ios": "npm-watch run_ios",
+        "run_android": "tns run android --emulator",
+        "run_ios": "tns run ios --emulator",
+        "dev": "lite-server"
+    },
+    "devDependencies": {
+        "lite-server": "^2.6.1",
+        "run-script-webpack-plugin": "^0.0.11"
+    },
+    "dependencies": {
+        "jquery": "^3.6.0"
+    }
+}
