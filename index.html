@@ -6,11 +6,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="index.js" defer></script>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title>
+        <h1>
+            jQuery Practice
+        </h1>
+    </title>
 </head>
 
 <body>
+    <h1>Heading</h1>
+    <div class="readyDemo">
+
+    </div>
+    <br>
+    <!-- <a href="google.com" target="_blank">Google blank</a>
+    <a href="yahoo.com" target="_self">Google self</a> -->
+
+
+    <p>My Stupid List</p>
+
+    <a href="https://www.cyclingnews.com">outside UL a tag</a>
+
+    <ul id="item-list">
+        <li id="first-li">
+            Coffee
+            <a href="https://www.google.com">Google</a>
+            <div>
+                <a href="https://yahoo.com" id="inside-a-div">yahoo.com</a>
+            </div>
+        </li>
+        <li>Milk</li>
+        <li>Coffee</li>
+        <li>stuff</li>
+    </ul>
+    <button>super happy fun button</button>
+
+    <!-- <ul>
+        <li>Atomic</li>
+        <li>Rossignol</li>
+        <li>4frnt</li>
+        <li>Black Diamond</li>
+    </ul> -->
+
+    <!-- 
+    <script>
+        $(document).ready(function () {
+            $("#Atomic").text();
+            $("#Rossignol").text();
+            $("#4frnt").text();
+            $("Black Diamond").text();
+        });
+    </script> -->
+    <script>console.log('today is Friday')</script>
+
+
+    <style>
+        .readyDemo {
+            font-size: 20px;
+            /* font-weight: 700; */
+        }
+    </style>
+
+    <script src="./jquery.js"></script>
+
+    <script>
+        // console.log('on line 35');
+        $(document).ready(function () {
+            $('.readyDemo').text('Frank Zappa').css('color', 'purple').fadeIn("slow");
+
+            // $('h1').css('color', 'orange');
+
+            // $("a[href='yahoo.com']").css('color', 'green').text('Yahoo! ');
+            // $("a[target='_blank']").css('color', 'turquoise');
+
+            // $('#item-list >li:first').css('color', 'grey');
+            $("button").click(function () {
+                // $("#item-list").find("a").css('color', 'red');
+                // $("#first-li").children("a").css('color', 'blue');
+                // $("#inside-a-div").closest("li").css('color', 'red');
+                // $("#inside-a-div").parent().css('border', '1px solid orange');
+                // $("#first-li").next().css('border', '1px solid black');
+                // $("#item-list li:last").prev().css('border', '1px solid black');
+                // $("#item-list li:last").siblings().css('border', '1px solid red');
+                // $("li").first().css('border', '1px solid black');
+                $("li").last().css('border', '3px solid orange');
+            })
+        });
+        // console.log('on line 40');
+        // $(document).ready(function () {
+        //     $("button").click(function () {
+        //     })
+        // })
+    </script>
+
+    <!-- <p>List 1:</p>
+    <ul id="item-list">
+        <li id="first-li">
+            <a>Outside</a>
+            <div><a id="inside-a-div">Inside</a></div>
+        </li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ul>
+
+    <button>Click Me</button> -->
 
 </body>
 
