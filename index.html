@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <title>Document</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <title>
@@ -41,6 +42,15 @@
         <li>stuff</li>
     </ul>
     <button>super happy fun button</button>
+    <div class="container">
+
+        <p id="container">What is the capital of Colorado?</p>
+        <input type="text" id="answer-box" />
+        <p id="result"></p>
+        <p id="answer"></p>
+        <button>Submit</button>
+
+    </div>
 
     <!-- <ul>
         <li>Atomic</li>
@@ -98,6 +108,26 @@
         //     $("button").click(function () {
         //     })
         // })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                var answer = $('#answer-box').val();
+
+                if (answer == 'Denver') {
+                    $('#result').text('Your answer is correct!');
+                    $(console.log('you have permission to leave early'));
+
+                } else {
+                    $('#result').html('<span style="color:red">Your answer is incorrect</span>');
+                    $('#answer').text('Correct answer is Denver');
+                    $(console.log('It is Friday, but not yet time to leave work'));
+                }
+            });
+            $('.after').click(function () {
+
+            })
+        })
     </script>
 
     <!-- <p>List 1:</p>
